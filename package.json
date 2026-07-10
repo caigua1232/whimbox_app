@@ -13,7 +13,7 @@
     "onlyBuiltDependenciesFile": "./trusted-dependencies-scripts.json"
   },
   "scripts": {
-    "start": "electron-vite preview",
+    "start": "cross-env NODE_ENV=production electron-vite preview",
     "predev": "run-s clean:dev",
     "dev": "cross-env NODE_ENV=development electron-vite dev --watch",
     "compile:app": "electron-vite build",
